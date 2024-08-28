@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formları</title>
+</head>
+<body>
+    <h1>HTML Formları</h1>
+    <!-- Kullanıcı verilerini toplamak için form -->
+    <form>
+        <fieldset>
+            <div>
+                <!-- Ad ve soyad girişi -->
+                <label for="ad">Ad: </label>
+                <input type="text" id="ad">
+                <br><br>
+                <label for="soyad">Soyad: </label>
+                <input type="text" id="soyad">
+            </div>
+            <br>
+            <div>
+                <!-- Cinsiyet tercihi -->
+                <label for="cinsiyet">Cinsiyet:</label>
+                <br>
+                <input type="radio" name="cinsiyet" value="erkek"> Erkek
+                &nbsp;&nbsp;
+                <input type="radio" name="cinsiyet" value="kadın"> Kadın
+            </div>
+            <br>
+            <div>
+                <!-- E-posta adresi girişi -->
+                <label for="email">E-posta Adresi:</label>
+                <br>
+                <input type="email" id="email">
+            </div>
+            <br>
+            <div>
+                <!-- En sevilen meyve tercihi -->
+                <label for="meyve">En Sevdiğiniz Meyve:</label>
+                <br>
+                <select id="meyve">
+                    <option value="">Lütfen Seçin..</option>
+                    <option value="armut">Armut</option>
+                    <option value="çilek">Çilek</option>
+                    <option value="erik">Erik</option>
+                    <option value="portakal">Portakal</option>
+                    <option value="karpuz">Karpuz</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!-- Şifre girişi -->
+                <label for="sifre">Şifre:</label>
+                <br>
+                <input type="password" id="sifre">
+            </div>
+            <br>
+            <div>
+                <!-- Mesaj kutusu -->
+                <label for="mesaj">Mesajınız:</label>
+                <br>
+                <textarea id="mesaj" cols="15" rows="3"></textarea>
+            </div>
+            <br>
+            <div>
+                <!-- Form gönderme düğmesi -->
+                <button type="submit">Gönder</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
